@@ -20,16 +20,26 @@ const Header: React.FC<HeaderProps> = ({ mineCount, flagCount, status, onReset }
     }
   };
 
+  const getStatusEmoji = () => {
+    switch (status) {
+      case 'idle': return '🙂';
+      case 'playing': return '😊';
+      case 'won': return '😎';
+      case 'lost': return '😵';
+      default: return '🙂';
+    }
+  };
+
   return (
     <div className="header">
       <div className="mine-counter">
-        Mines: {mineCount - flagCount}
+        {mineCount - flagCount}
       </div>
       <div className="status">
         {getStatusText()}
       </div>
       <button className="reset-button" onClick={onReset}>
-        {status === 'playing' ? '😊' : status === 'won' ? '😎' : status === 'lost' ? '😵' : '🙂'}
+        {getStatusEmoji()}
       </button>
     </div>
   );
