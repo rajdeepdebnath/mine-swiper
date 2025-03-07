@@ -5,3 +5,10 @@
   margin: 20px auto;
   max-width: 500px;
 }
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 500px;
+}

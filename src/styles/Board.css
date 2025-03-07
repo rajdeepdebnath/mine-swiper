@@ -8,3 +8,13 @@
 .row {
   display: flex;
 }
+.board {
+  display: inline-block;
+  border: 2px solid #666;
+  background-color: #aaa;
+  padding: 5px;
+}
+
+.row {
+  display: flex;
+}

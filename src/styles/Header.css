@@ -23,3 +23,28 @@
 .reset-button:hover {
   background-color: #ddd;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #eee;
+  border: 2px solid #666;
+  margin-bottom: 10px;
+}
+
+.mine-counter, .status {
+  font-weight: bold;
+}
+
+.reset-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.reset-button:hover {
+  background-color: #ddd;
+}

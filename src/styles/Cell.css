@@ -27,3 +27,32 @@
 .cell.neighbors-6 { color: teal; }
 .cell.neighbors-7 { color: black; }
 .cell.neighbors-8 { color: gray; }
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #999;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.revealed {
+  background-color: #eee;
+}
+
+.cell.mine {
+  background-color: #f88;
+}
+
+.cell.neighbors-1 { color: blue; }
+.cell.neighbors-2 { color: green; }
+.cell.neighbors-3 { color: red; }
+.cell.neighbors-4 { color: darkblue; }
+.cell.neighbors-5 { color: darkred; }
+.cell.neighbors-6 { color: teal; }
+.cell.neighbors-7 { color: black; }
+.cell.neighbors-8 { color: gray; }
